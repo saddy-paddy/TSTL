@@ -62,14 +62,14 @@ For  Deepspeed-related issues, please refer to the [DeepSpeed GitHub page](https
   4. All video files are located inside the DATA_PATH.
 
 # Expert model preparation
-We use the pre-trained weights of spatial and temporal experts. The pretrained weight of the spatial expert (CLIP) uses the [official weight](https://openaipublic.azureedge.net/clip/models/5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f/ViT-B-16.pt). The pre-trained weight of the temporal expert (VideoMAE) uses the pre-trained weights from the two datasets SSV2 and UCF101.[SSV2](https://drive.google.com/file/d/1dt_59tBIyzdZd5Ecr22lTtzs_64MOZkT/view?usp=sharing) use the [official weights](https://github.com/MCG-NJU/VideoMAE/blob/main/MODEL_ZOO.md) Put each downloaded expert weight into the VMAE_PATH and CLIP_PATH of the fine-tune script.
+We use the pre-trained weights of spatial and temporal experts. The pretrained weight of the spatial expert (CLIP) uses the [official weight](https://openaipublic.azureedge.net/clip/models/5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f/ViT-B-16.pt). The pre-trained weight of the temporal expert (VideoMAE) uses the pre-trained weights from the two datasets SSV2 and UCF101.[SSV2](https://drive.google.com/file/d/1dt_59tBIyzdZd5Ecr22lTtzs_64MOZkT/view?usp=sharing) and [UCF101] use the [official weights](https://github.com/MCG-NJU/VideoMAE/blob/main/MODEL_ZOO.md) Put each downloaded expert weight into the VMAE_PATH and CLIP_PATH of the fine-tune script.
 
 
 # Fine-tuning TSTL
 
 We provide the **off-the-shelf** scripts in the [scripts folder](scripts).
 
--  For example, to fine-tune CAST on **Kinetics400** with 16 GPUs (2 nodes x 8 GPUs) script.
+-  For example, to fine-tune CAST on **UCF101** :
 
   ```bash
 DATA_PATH=YOUR_PATH

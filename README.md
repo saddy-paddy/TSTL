@@ -140,7 +140,7 @@ python ./run_bidirection.py --fine_tune {YOUR_FINETUNED_WEIGHT} --eval
 
 ## Acknowledgements
 
-This project is built upon [VideoMAE](https://github.com/MCG-NJU/VideoMAE),  [CLIP](https://github.com/openai/CLIP) and [CAST](). Thanks to the contributors of these great codebases.
+This project is built upon [VideoMAE](https://github.com/MCG-NJU/VideoMAE),  [CLIP](https://github.com/openai/CLIP) and [CAST](https://github.com/KHU-VLL/CAST.git). Thanks to the contributors of these great codebases.
 
 ## License
 

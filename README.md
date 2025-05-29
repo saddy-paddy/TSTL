@@ -1,7 +1,7 @@
 
 # TSTL: Two Stage Transformer Learning
 
-![TSTL Framework](figs/CAST.jpg)
+![TSTL Framework](figs/trainwhite.png)
 <br>
 
 

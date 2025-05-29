@@ -81,9 +81,9 @@ OMP_NUM_THREADS=1 python -m torch.distributed.launch \
     --nproc_per_node=2 \
     --master_port ${YOUR_NUMBER} --nnodes=8 \
     --node_rank=${YOUR_NUMBER} --master_addr=${YOUR_NUMBER} \
-    YOUR_PATH/run_bidirection_compo.py \
-    --data_set Kinetics-400 \
-    --nb_classes 400 \
+    YOUR_PATH/run_bidirection.py \
+    --data_set UCF101 \
+    --nb_classes 101 \
     --vmae_model compo_bidir_vit_base_patch16_224 \
     --anno_path ${ANNOTATION_PATH}
     --data_path ${DATA_PATH} \
@@ -91,17 +91,17 @@ OMP_NUM_THREADS=1 python -m torch.distributed.launch \
     --vmae_finetune ${VMAE_MODEL_PATH} \
     --log_dir ${YOUR_PATH} \
     --output_dir ${YOUR_PATH} \
-    --batch_size 6 \
+    --batch_size 8 \
     --input_size 224 \
     --short_side_size 224 \
-    --save_ckpt_freq 25 \
+    --save_ckpt_freq 2 \
     --num_sample 1 \
     --num_frames 16 \
     --opt adamw \
     --lr 1e-3 \
     --opt_betas 0.9 0.999 \
     --weight_decay 0.05 \
-    --epochs 70 \
+    --epochs 30 \
     --dist_eval \
     --test_num_segment 5 \
     --test_num_crop 3 \

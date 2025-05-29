@@ -1,7 +1,7 @@
 
-# CAST: Cross-Attention in Space and Time for Video Action Recognition [[NeurIPS 2023](https://neurips.cc/virtual/2023/poster/70748)][[Project Page](https://jong980812.github.io/CAST.github.io)][[Arxiv](https://arxiv.org/abs/2311.18825)]
+# TSTL: Two Stage Transformer Learning
 
-![CAST Framework](figs/CAST.jpg)
+![TSTL Framework](figs/CAST.jpg)
 <br>
 
 

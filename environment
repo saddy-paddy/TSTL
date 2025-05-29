@@ -1,0 +1,29 @@
+from google.colab import drive
+import torch
+
+# Install specific PyTorch and torchvision versions
+# The CUDA version (cu113 in this example) must match your GPU setup.
+# If unsure, try cu113, cu116, or cu118.  If you don't have a GPU, remove the --extra-index-url and cu113 part.
+!pip install torch==1.11.0+cu113 torchvision==0.11.0+cu113 torchaudio==0.10.0+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+
+# Install other dependencies
+!pip install triton==2.0.0
+!git clone https://github.com/microsoft/DeepSpeed
+%cd DeepSpeed
+!pip install deepspeed
+!pip install timm
+!pip install TensorboardX decord einops scipy pandas requests
+
+# Mount Google Drive
+drive.mount('/content/drive')
+
+# Unzip your dataset
+!unzip /content/drive/MyDrive/sthv2.zip -d /content/
+
+
+# Change directory to your project
+%cd /content/drive/MyDrive/CAST
+!pwd
+
+# Run your script
+!python run_bidirection.py --eval

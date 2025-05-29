@@ -5,12 +5,6 @@
 <br>
 
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cast-cross-attention-in-space-and-time-for-1/action-recognition-on-epic-kitchens-100)](https://paperswithcode.com/sota/action-recognition-on-epic-kitchens-100?p=cast-cross-attention-in-space-and-time-for-1)
-
-![GitHub last commit](https://img.shields.io/github/last-commit/khuvll/CAST)<br>
-![Website Status](https://img.shields.io/website?url=https://jong980812.github.io/CAST.github.io/)<br>
-![GitHub issues](https://img.shields.io/github/issues-raw/khuvll/CAST)
-![GitHub closed issue](https://img.shields.io/github/issues-closed/khuvll/CAST)<br>
 
 
 # :wrench: Installation

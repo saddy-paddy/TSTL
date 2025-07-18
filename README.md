@@ -114,8 +114,10 @@ OMP_NUM_THREADS=1 python -m torch.distributed.launch \
 
 
 Evaluation commands for the SSV2, UCF101
+First trian the model using the following commands, use --eval for evaluation. 
 ```
-python ./run_bidirection.py --fine_tune {YOUR_FINETUNED_WEIGHT} --eval
+python ./train_selector.py --fine_tune {YOUR_FINETUNED_WEIGHT} --eval
+python ./train_experts.py --fine_tune {YOUR_FINETUNED_WEIGHT} --eval
 ```
 
 
